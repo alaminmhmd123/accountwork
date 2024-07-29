@@ -5,7 +5,7 @@ pydantic
 pandas
 pillow
 arabic-reshaper
-bidi
+python-bidi
 apscheduler
 requests
 bcrypt==3.2.0
