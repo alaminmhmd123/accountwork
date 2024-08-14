@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المصروف</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="cont" style="padding: 80px;">
+        <h1>المصروف</h1>
+        <button onclick="window.location.href='/'">العودة إلى الصفحة الرئيسية</button>
+        <!-- سيتم إدراج الملخص هنا -->
+        {{ summary_html | safe }}
+    </div>
+</body>
+</html>
