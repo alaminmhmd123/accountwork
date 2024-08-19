@@ -234,6 +234,7 @@ def process_pric_images():
     # استخدام الدالة لتفريغ محتويات المجلد وحذفه
     folder_path = 'static/uploads'
     empty_and_delete_folder(folder_path)
+    
     # رابط التحميل المباشر للملف
     url = 'https://api.onedrive.com/v1.0/shares/s!AkGEUNEm-8qEi0TVBCIx8XLNCP_x/root/content'
     
@@ -246,7 +247,7 @@ def process_pric_images():
     df = pd.read_excel(filexcl, sheet_name='بيانات رأس المال', engine='openpyxl')
 
     # استخراج البيانات من الجدول
-    q = df['رأس المال']
+    q = df['صافي التكلفة']
     w = df['الرقم']
     p = len(w)
 
@@ -256,8 +257,11 @@ def process_pric_images():
             image_path = f"static/image/{w[i]}.jpg"
             if os.path.exists(image_path) and q[i] > 0:
                 image = Image.open(image_path)
-                # حفظ الصورة في المجلد
-                image.save(f"static/uploads/رقم {w[i]} التكلفة {q[i]}.jpg")
+                # إزالة الفواصل العشرية من رأس المال
+                capital = int(q[i])
+                # حفظ الصورة في المجلد مع النص المعدل
+                image.save(f"static/uploads/رقم {w[i]} التكلفة {capital}.jpg")
+
 
 
 # إعداد جدولة المهام
