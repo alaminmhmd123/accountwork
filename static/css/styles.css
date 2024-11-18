@@ -1,0 +1,418 @@
+/* تنسيق الخلفية العامة */
+body {
+    background-image: url('/static/images/your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	height: 100vh; /* ملء كامل ارتفاع الشاشة */
+    display: flex;
+    justify-content: center;
+
+}
+
+/* تنسيق حاوية الرفع*/
+.cont {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* خلفية أكثر شفافية */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* أقصى عرض للحاوية */
+    /*max-height: 500px;*/ /* أقصى طول للحاوية */
+    margin: 0 auto; /* مركزي في الشاشة */
+    overflow-x: auto; /* يسمح بالتمرير الأفقي إذا لزم الأمر */
+}
+
+
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* خلفية أكثر شفافية */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* أقصى عرض للحاوية */
+    /*max-height: 500px;*/ /* أقصى طول للحاوية */
+    margin: 0 auto; /* مركزي في الشاشة */
+    overflow-x: auto; /* يسمح بالتمرير الأفقي إذا لزم الأمر */   
+    /* تنسيق الحاوية باستخدام flexbox */
+    display: flex;
+    align-items: center; /* محاذاة المحتويات عمودياً */
+    flex-direction: column; /* ترتيب العناصر في عمود */
+    height: 100vh; /* ملء كامل ارتفاع الشاشة */
+}
+
+.container .left-item {
+    align-self: flex-start; /* محاذاة هذا العنصر إلى اليسار */
+}
+
+.modal-caption {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px; /* يمكنك تعديل الحجم هنا */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.modal-captionn {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 20px; /* يمكنك تعديل الحجم هنا */
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#imageSelect {
+    font-size: 18px; /* حجم الخط */
+    padding: 10px; /* إضافة مساحة داخلية حول النص */
+    border-radius: 5px; /* جعل الحواف ناعمة */
+    border: 1px solid #ccc; /* إضافة حد حول القائمة */
+    width: 100%; /* جعل القائمة تأخذ عرض الحاوية بالكامل */
+}
+
+/* تنسيق الجدول */
+.table-container {
+    margin: 20px auto; /* تنسيق للمسافة حول الجدول */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-x: auto; /* يسمح بالتمرير الأفقي */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px; /* زيادة حجم الخط في الجدول */
+    text-align: left;
+}
+
+th, td {
+    padding: 16px; /* زيادة الحشوة داخل الخلايا */
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* خلفية شفافة قليلاً */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; /* خلفية شفافة قليلاً */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* لون خلفية عند التمرير فوق الصف */
+}
+
+caption {
+    font-size: 1.8em; /* زيادة حجم خط التسمية */
+    margin: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+/* تنسيق المعرض */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-item {
+    text-align: center;
+}
+
+.gallery-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+/* تحسينات المودال */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+button:hover {
+    background-color: #45a049; /* لون الخلفية عند التمرير فوق الزر */
+}
+
+/* تنسيق الأزرار */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* اللون الأزرق */
+    border: none;
+    border-radius: 15px; /* زيادة هذه القيمة لنعومة أكبر */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* إضافة مسافة حول الأزرار */
+}
+
+
+.button:hover {
+    background-color: #0056b3; /* لون أغمق عند المرور فوق الزر */
+}
+button:hover {
+    background-color: #0056b3; /* لون أغمق عند المرور فوق الزر */
+}
+.button:active {
+    background-color: #00408b; /* لون أغمق عند النقر */
+}
+button:active {
+    background-color: #00408b; /* لون أغمق عند النقر */
+}
+
+/* تنسيق حاوية تسجيل الدخول */
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* خلفية بيضاء مع شفافية خفيفة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* أقصى عرض للحاوية */
+    max-height: 350px;
+    text-align: center;
+}
+
+/* تنسيق النموذج */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #007bff; /* لون أزرق */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* لون أغمق عند المرور فوق الزر */
+}
+
+/* تنسيق رابط العودة */
+.back-button {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* استجابة للأجهزة المحمولة */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-form label {
+        font-size: 14px;
+    }
+
+    .login-form input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login-form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 14px;
+    }
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: #007bff;
+    font-size: 3em;
+
+	}
+input[type="file"] {
+	margin-bottom: 20px;
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	padding: 10px;
+	width: 50%;
+	}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* اللون الأزرق */
+    border: none;
+    border-radius: 15px; /* زيادة هذه القيمة لنعومة أكبر */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* إضافة مسافة حول الأزرار */
+}
+
+
+button:hover {
+	background-color: #0056b3;
+	}
+	
+ .header {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 background-color: #111;
+	 color: white;
+	 padding: 10px;
+	 flex-direction: column;
+	 }
+.header h1 {
+	margin: 0;
+	text-align: center;
+	flex-grow: 1;
+	}
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	}
+.sidebar a {
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+	border-bottom: 1px solid #575757;
+	}
+.sidebar a:hover {
+	background-color: #575757;
+	}
+.open-btn {
+	font-size: 20px;
+	cursor: pointer;
+	color: #111;
+	padding: 10px 15px;
+	border: none;
+	}
+#main-content {
+	transition: margin-left 0.5s;
+	padding: 16px;
+	}
+	
+.sidebar a, .sidebar button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background-color: #111; /* لون الخلفية */
+    border: none; /* إزالة الحدود */
+    width: 100%; /* عرض كامل */
+    text-align: left; /* محاذاة النص إلى اليسار */
+}
+.sidebar a:hover, .sidebar button:hover {
+    background-color: #575757; /* لون الخلفية عند التمرير */
+}
+
