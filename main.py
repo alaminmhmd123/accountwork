@@ -101,7 +101,7 @@ def process_images():
     folder_path = 'static/uploads'
     empty_and_delete_folder(folder_path)
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -134,7 +134,7 @@ def process_available_images():
     folder_path = 'static/uploads'
     empty_and_delete_folder(folder_path)
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -168,7 +168,7 @@ def process_available_images1():
     folder_path = 'static/uploads'
     empty_and_delete_folder(folder_path)
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -202,7 +202,7 @@ def process_price_images():
     folder_path = 'static/uploads'
     empty_and_delete_folder(folder_path)
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -236,7 +236,7 @@ def process_price_nazm_images():
     folder_path = 'static/uploads'
     empty_and_delete_folder(folder_path)
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -271,7 +271,7 @@ def process_pric_images():
     empty_and_delete_folder(folder_path)
     
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -424,7 +424,7 @@ async def read_summary(request: Request):
         return RedirectResponse(url="/login")
     
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -443,7 +443,7 @@ async def read_summary(request: Request):
 @app.get("/summary1", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -490,7 +490,7 @@ async def view_data(request: Request):
 @app.get("/summary2", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -545,7 +545,7 @@ async def view_data(request: Request):
 @app.get("/summary3", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -597,7 +597,7 @@ async def view_data(request: Request):
 @app.get("/summary4", response_class=HTMLResponse)
 async def view_data(request: Request):
 # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -649,7 +649,7 @@ async def view_data(request: Request):
 @app.get("/summary5", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -704,7 +704,7 @@ async def view_data(request: Request):
 @app.get("/summary6", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -759,7 +759,7 @@ async def view_data(request: Request):
 @app.get("/summary7", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -814,7 +814,7 @@ async def view_data(request: Request):
 @app.get("/summary8", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -869,7 +869,7 @@ async def view_data(request: Request):
 @app.get("/summary9", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -925,7 +925,7 @@ async def view_data(request: Request):
 @app.get("/summary10", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -980,7 +980,7 @@ async def view_data(request: Request):
 @app.get("/summary11", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -1035,7 +1035,7 @@ async def view_data(request: Request):
 @app.get("/summary12", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -1090,7 +1090,7 @@ async def view_data(request: Request):
 @app.get("/summary13", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
@@ -1145,7 +1145,7 @@ async def view_data(request: Request):
 @app.get("/summary14", response_class=HTMLResponse)
 async def view_data(request: Request):
     # رابط التحميل المباشر للملف
-    url = 'https://1drv.ms/x/c/84cafb26d1508441/EUGEUNEm-8oggITEBQAAAAABPBKjYUiBUdBKAh2dbwEYEw?download=1'
+    url = 'https://www.dropbox.com/scl/fi/d332anc7id7z24x9u2y12/Workshop.xlsx?rlkey=f4yaaz7euil4o2xqogwt3qcxm&dl=1'
     
     # تحميل الملف من الرابط
     response = requests.get(url)
