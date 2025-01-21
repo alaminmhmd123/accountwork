@@ -1,0 +1,59 @@
+@media (min-height: 680px), screen and (orientation: portrait) {
+    /* تنسيق حاوية تسجيل الدخول */
+    .login-container {
+        background: rgba(255, 255, 255, 0.3); /* خلفية بيضاء مع شفافية خفيفة */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: none; /* أقصى عرض للحاوية */
+        max-height: fit-content;
+        text-align: center;
+    }
+
+    /* تنسيق النموذج */
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form label {
+        margin: 20px 0 25px;
+        font-size: 50px;
+    }
+
+    .login-form input {
+        padding: 10px;
+        margin-bottom: 50px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 50px;
+    }
+
+    .login-form button {
+        padding: 10px;
+        background-color: #007bff; /* لون أزرق */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .login-form button:hover {
+        background-color: #0056b3; /* لون أغمق عند المرور فوق الزر */
+     }
+    h1 {
+    margin-bottom: 40px;
+    font-size: 75px;
+    }
+
+    th, td {
+    padding: 5px; /* زيادة الحشوة داخل الخلايا */
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    font-size: small;
+    }
+
+}
